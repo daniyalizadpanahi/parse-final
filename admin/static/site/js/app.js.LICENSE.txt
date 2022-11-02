@@ -1,0 +1,9 @@
+/*!
+  * domready (c) Dustin Diaz 2012 - License MIT
+  */
+
+/*!
+ * Vue.js v2.6.12
+ * (c) 2014-2020 Evan You
+ * Released under the MIT License.
+ */

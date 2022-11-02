@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa">
+{% load static i18n %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans 'Parse' %}</title>
+    <meta name="csrf-token" content="{{ csrf_token }}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="sayyal pushesh company geopool website">
+    <link rel="stylesheet" href="{% static 'site/css/bootstrap.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'site/css/boxicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'site/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'site/css/meanmenu.min.css' %}">
+    <link rel="stylesheet" href="{% static 'site/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'site/css/beautiful-fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'site/css/style.css' %}">
+</head>
+<body>
+<noscript><strong>We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it to
+    continue.</strong></noscript>
+<div id="app"></div>
+<script>
+    window._sharedData = {
+    {% if request.user.is_authenticated %}
+        first_name: '{{ request.user.first_name }}',
+        last_name: '{{ request.user.last_name }}',
+        username: '{{ request.user.email }}',
+        logged_in: true,
+    {% else %}
+        logged_in: false,
+    {% endif %}
+    };
+</script>
+<script src="{% static 'site/js/app.js' %}"></script>
+<script src="{% static 'site/js/jquery.min.js' %}"></script>
+<script src="{% static 'site/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+(self.webpackChunkfrontend=self.webpackChunkfrontend||[]).push([[522],{33522:(e,n,t)=>{"use strict";t.r(n),t.d(n,{default:()=>u});const s={name:"About"};const u=(0,t(51900).Z)(s,(function(){var e=this.$createElement;return(this._self._c||e)("div")}),[],!1,null,"57160ce7",null).exports}}]);

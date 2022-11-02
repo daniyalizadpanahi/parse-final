@@ -1,0 +1,13 @@
+db.sqlite3
+__pycache__/
+migrations/
+node_modules/
+static/admin/js/
+static/site/js/app.js
+venv/
+
+.idea/
+/.idea/*
+/front/static/
+/main/static/projects/
+/static/
